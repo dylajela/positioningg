@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   		<link rel="stylesheet" href="styles.css"> 
+    		<title>CSS Positioning</title>
+	</head>
+
+	<body>
+		<header>
+			<h1> CSS Positioning </h1>
+			<h5> Exercise (23 November 2023) </h5>
+			<h5> GROUP 10 </h5>
+		</header>
+		
+		<nav>
+			<ul>
+				<li><a href="#">HOME </a></li>
+				<li><a href="#">ABOUT</a></li>
+			</ul>
+		</nav>
+		
+		<section class="Main-Layout">
+    			<div>
+        			
+				<article>
+            				<h2>Definition</h2><br>
+            					<p>	The CSS position property defines the position of an element in a document. This property works with the left, right, top, bottom and z-index properties to determine the final position of an element on a page. 
+						<br><br> 
+						<p>There are five values the position property can take:</p>
+        			</article>
+
+        			<aside>
+            				<h2>Static</h2><br>
+					<p>Do not be affected by the left, right, top, bottom, and z-index properties.</p><br>
+
+					<p>Here is an example:</p><br>
+           				 <div id="ScrollContainer">
+						<div id="div1">Box 1 </div>
+          					<div id="div2">Box 2 (static)</div>
+					</div>
+       				</aside>
+		
+				<aside>
+            				<h2>Relative</h2><br>
+           				<p>When assigned position: relative, an element follows the render flow of the page, but will be shifted relative to its initial position.</p><br>
+					<p>Surrounding elements won't be affected, but there will be soace repositioned by the left, right, top, and bottom properties.</p><br>
+					<p>Here is an example:</p><br>
+					<div id="ScrollContainer">
+						<div id="div3">Box 1 </div>
+          					<div id="div4">Box 2 (relative)</div>
+					</div>
+       				 </aside>
+
+				<aside>
+            				<h2>Absolute</h2><br>
+					<p>With position: absolute, an element ignores the normal document flow. However, instead of being positioned relative to the viewport, it’s positioned relative to the nearest positioned ancestor (the default)</p><br>
+					<p>Here is an example:</p><br>
+					<div id="ScrollContainer">
+						<div id="div5">Box 1 </div>
+						<div id="container">
+          						<div id="div6">Box 2 (absolute) </div>
+						</div>
+					</div>
+       				 </aside>
+
+				<aside>
+            				<h2>Fixed</h2><br>
+           				<p>Elements with position: fixed do not adhere to the normal render flow of the document. Instead, fixed elements are positioned relative to the viewport</p><br>
+					<p>Fixed elements do not move when the user scrolls. Can use the top, right, bottom, and left properties to set the fixed element's final position</p><br>
+					<p>Here is an example:</p><br>
+					<iframe src="https://www.youtube.com/embed/LopouI8f2yg?si=C_vX9-z2JopRsLbY" title="YouTube video player" frameborder="0" allow="accelerometer; &autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+					</iframe>
+       				 </aside>
+
+				<aside>
+            				<h2>Sticky</h2><br>
+           				 <p>Elements with position: sticky are positioned depending on the user’s scroll. Depending on how far the user has scrolled down the page, a sticky element behaves like a relative element until the viewport meets a specified position. Then it becomes fixed in a spot and appears to “stick” to the page as the user scrolls.</p><br>
+					<p>Here is an example:</p><br>
+					<div id="ScrollContainer">
+						<div id="div9">Box 1</div>
+						<div id="div10">Box 2 (sticky) </div>
+						<div id="div11">Box 3</div>
+						<div id="div12">Box 4</div>
+						<div id="div13">Box 5</div>
+					</div>
+       				 </aside>
+
+   			 </div>
+		</section>
+
+		<footer>
+        		<p>&copy; 2023 My Website. All rights reserved.</p>
+    		</footer>
+
+	</body>
+</html>
